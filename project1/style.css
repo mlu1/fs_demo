@@ -1,0 +1,14 @@
+html,body{
+
+    font-family:monospace;
+    
+}
+
+.container{
+    background-color:aliceblue;
+     margin: auto;
+     width: 50%;
+     padding: 10px;
+     position:float;
+     text-align: center;
+}
