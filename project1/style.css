@@ -1,14 +1,47 @@
-html,body{
-
-    font-family:monospace;
-    
-}
 
 .container{
     background-color:aliceblue;
-     margin: auto;
-     width: 50%;
-     padding: 10px;
-     position:float;
-     text-align: center;
+    margin: auto;
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+    
+}
+
+.left-frame{
+    position:absolute;
+    left:0px;
+    width: 100px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right:5px
+}
+
+
+.middle-frame{
+    position:absolute;
+    left:200px;
+    width: 100px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right:5px;
+    background-color: blue;
+}
+
+.right-frame{
+    position:absolute;
+    left:350px;
+    width: 100px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right:5px;
+    background-color:yellow;
+}
+
+
+.video-frame{
+    width:100%;
 }
