@@ -1,21 +1,55 @@
 <!DOCTYPE html >
 <html lang = "en">
     <head>
+        <meta charset = "UTF-8"/>
         <link rel ="stylesheet" href = "style.css"/>
         <title>Learn FS</title>
     </head>
     <body>
         <div class = "container">
+            <div class="header">
+                <h1>Testing Tags</h1>
+                <p>html page for testing tags</p>
+            </div>
             <div class ="left-frame">
-                <video loop="loop"  class = "video-frame" autoplay="autoplay">
+                <span class ="video-title">Video</span>
+                <video loop="loop"  class = "video-frame">
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4">
                 </video>
             </div>
             <div class ="middle-frame">
-                <p>Middle</p>
+                <span class ="section-title"> Tables </span>
+                <table>
+                       <thead>
+                            <tr>
+                                <td>Col 1</td>
+                                <td>Col 2</td>
+                                <td>Col 3</td>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td>col1 value</td>
+                                <td>col2 value</td>
+                                <td>col3 value</td>
+                            </tr>
+                            <tr>
+                                <td>col1 value</td>
+                                <td>col2 value</td>
+                                <td>col3 value</td>
+                            </tr>
+                       </tbody>
+                </table>
             </div>
             <div class = "right-frame">
-                <p>Right</p>     
+                <span class ="section-title"> Forms </span>
+                <form method = "GET" action = "/submit">
+                    <label for="uname">User name</label><br> 
+                    <input  type="text" id="uname" name ="uname"  placeholder="Enter your username" required/> 
+                    <label for="age">Age</label><br> 
+                    <input  type="number" id ="age"  name = "age"  placeholder="Enter your age" required/>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
     </body>
