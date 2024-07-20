@@ -1,28 +1,30 @@
-h1{
-    background-color: yellow;
-}
-
-.parent{
-    width:200px;
-    background-color: red;
-}
-
-.blue{
-    background: blue;
-    width:200px;
-    height:200px;
-}
 
 body{
-    background: pink;
+    background-color: pink;
 }
 
-.red{
-    width:200px;
-    height:250px;
-    background: red;
+
+.first{
+    flex-shrink: 0;
 }
 
-#test{
-    background-color: brown;
+.second{
+    flex-shrink: 0;
 }
+
+
+.parent{
+    display: flex;
+    flex-direction: row;
+}
+
+.parent div{
+    background-color: red;
+    width: 20px;
+    height: 50px;
+    margin:10px;
+    flex-basis: 200px;
+    border: 2px solid black;
+}
+
+
