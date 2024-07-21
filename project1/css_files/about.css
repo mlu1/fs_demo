@@ -3,7 +3,6 @@ body{
     background-color: pink;
 }
 
-
 .first{
     flex-shrink: 0;
 }
@@ -12,10 +11,10 @@ body{
     flex-shrink: 0;
 }
 
-
 .parent{
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
 }
 
 .parent div{
@@ -26,5 +25,3 @@ body{
     flex-basis: 200px;
     border: 2px solid black;
 }
-
-
