@@ -30,8 +30,6 @@ section span{
     position: absolute;
     width:180px;
     height: 108px;
-    top:0;
-    left:0;
 }
 nav ul li{
     list-style: none;
