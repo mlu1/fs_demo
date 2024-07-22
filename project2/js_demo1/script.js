@@ -50,26 +50,26 @@ function conditionalFunction(agesParameter){
     }   
 }
 
-function shouldIgetALicense(my_age,bribe){
-    if(age<=18 && bribe >100 ){
-        console.log('You Pass')
-        return 
-    }
-    
-    if(my_age > 18){
-        console.log('This person is above 18')
+function shouldIgetALicense(my_age,bribe,whiteListed){
+    if(whiteListed){
+        console.log('You are banned',whiteListed)
         return
     }
-    else{
-        if(bribe >100){
-            console.log('You passed')
-        }else{
-            console.log("This guy is below 18")
-        }
+
+    if(my_age<=18 && bribe >100 ){
+        console.log('You Pass [<18 and bribe >100]')
+        return 
+    }
+    else if(my_age > 18){
+        console.log('This person is above 18[cool qualify]')
+    }
+    else if (bribe <=100)   
+    {
+        console.log('This person is below 18 [bribe is too low]')   
     }
 }
 
-shouldIgetALicense(18,200)
+shouldIgetALicense(5,301,true)
 
 function conditionalFunction(agesParameter){
     if (agesParameter > 18){
@@ -80,12 +80,67 @@ function conditionalFunction(agesParameter){
     }   
 }
 
-console.log("The age limit+"+conditionalFunction(10))
+let myFriends = ['default']
 
-const timer = document.querySelector('span')
-console.log(timer)
-makeConsoleLog()
+function addMyFriends(friend){
+    myFriends.push(friend)
+    console.log('Friend list '+ myFriends)
+}
 
-setInterval(()=>{
-    timer.innerText = new Date().toLocaleDateString()
-},1000)
+addMyFriends('Mluleki')
+addMyFriends('Mtande')
+addMyFriends(3)
+
+const lastGuys = myFriends.pop()
+console.log(myFriends,lastGuys)
+
+/*
+    Loops
+*/
+for (let k=0;k<=10;k++){
+    myFriends.push(k)
+}
+console.log(myFriends)
+
+
+let evenNumbers = []
+let oddNumbers = []
+let arr_numbers = [0,1,2,3,4,5,6,7,8,9,10]
+
+function skipNumbers(arr_input,skip_number){
+    for (let i =0;i<arr_input.length;i++){
+        if (i %2 ==0 && i !==skip_number){
+            evenNumbers.push(i)
+        }
+        else{
+            oddNumbers.push(i)
+        }
+    }
+    return evenNumbers
+}
+
+function skipNumbersv2(number){
+    let evens = []
+    for(let j=0;j<20;j++){
+        if(j===number){
+            break
+        }
+        if(j%2 ===0){
+            evens.push(j)
+        }
+    }
+    return evens
+}
+
+console.log(skipNumbersv2(10))
+console.log(skipNumbers(arr_numbers,10))
+
+const myObject = {
+    'keyname':'value',
+    'keyname2':'value2',
+    'keyname3':{
+            'keyname4': 'hello world Pro'        
+    },
+    'keyname5':'Mluleki'
+}
+console.log(myObject['keyname3'])
