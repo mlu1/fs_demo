@@ -135,6 +135,9 @@ function skipNumbersv2(number){
 console.log(skipNumbersv2(10))
 console.log(skipNumbers(arr_numbers,10))
 
+/*
+    Objects 
+*/
 const myObject = {
     'keyname':'value',
     'keyname2':'value2',
@@ -143,4 +146,57 @@ const myObject = {
     },
     'keyname5':'Mluleki'
 }
-console.log(myObject['keyname3'])
+console.log(myObject['keyname3']['keyname4'])
+
+/* 
+    pass by reference
+*/
+
+const myProfile = {
+    name:"Mluleki",
+    age:35
+}
+
+const secondProfile = {
+    name:'John',
+    age:36
+}
+
+function primitiveMutated(primitive){
+    primitive++
+    console.log(primitive)
+}
+
+function mutate(obj1){
+    console.log(obj1.age++)
+}
+
+mutate(secondProfile)
+
+let num = 100
+primitiveMutated(num)
+
+/*
+    scoping- an area where a variable's lifetime is between curly braces
+*/
+function x(){
+    const hello = 'world'
+    console.log(hello)
+
+    if(true){
+        console.log(hello)
+    }
+}
+x()
+/*
+    Document manipulation
+*/
+const heading = document.querySelector('h1')
+console.log(heading)
+
+
+
+
+
+
+
