@@ -1,7 +1,12 @@
 import React from 'react'
-import { Link,NavLink} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import withRouter from './WithRouter'
 
-const Navbar = () =>{
+const Navbar = (props) =>{
+    setTimeout(()=>{
+        console.log(props)
+    },200)
+
     return(
         <nav className = 'ui raised very padded segment'>
                 <a className='ui teal inverted segment'>Gloria</a>
@@ -14,5 +19,4 @@ const Navbar = () =>{
     )
 }
 
-
-export default Navbar
+export default withRouter(Navbar);
