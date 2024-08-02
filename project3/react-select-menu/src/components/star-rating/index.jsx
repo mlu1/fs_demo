@@ -2,7 +2,6 @@ import './star_style.css'
 import {FaStar} from 'react-icons/fa'
 import { useState } from 'react';
 
-
 export default function  StarRating({noOfStars =5}){
 
      const [rating,setRating] = useState(0);
@@ -21,7 +20,9 @@ export default function  StarRating({noOfStars =5}){
     }
 
      return (
-        <div className = "star-rating">
+        <div className='container'>
+            <h2>Star Rating APP</h2>
+            <div className = "star-rating">
             {
                 [...Array(noOfStars)].map((_,index)=>{
                     index +=1
@@ -32,9 +33,10 @@ export default function  StarRating({noOfStars =5}){
                         onMouseMove = {() =>handleMouseEnter(index)}
                         onMouseLeave= {()=> handleMouseLeave()}
                         size = {40}
-                    />)
-                })
-            }
+                        />)
+                    })
+                }
+            </div>
         </div>
      )   
 }
