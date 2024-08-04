@@ -23,13 +23,21 @@ export default function ImageSlider(urls,limit=5,page=1){
     }
 
 
+     /*
+        Scenario
+        1. User is at the first image and clicks left button -> go to last image.
+        2. User is at the last image and clicks next button -> got to 1st image.
+        3.else move -1 or +1
+    */
+
     function handlePrevious(){
-        /*check if the image is the last */
+       
         setCurrentSlide(currentSlide === 0 ? images.length - 1:currentSlide-1)
 
     }
 
     function handleNext(){
+        
         setCurrentSlide(currentSlide === images.length -1 ? 0: currentSlide +1)
     }
 
@@ -66,7 +74,12 @@ export default function ImageSlider(urls,limit=5,page=1){
                         images.map((_,index)=>
                             <button
                                 key = {index}
-                                className={currentSlide === index ?"current-indicator":"current-image hide-current-image"}
+                                className={
+                                    currentSlide === index ?
+                                    "current-indicator":
+                                    "current-indicator inactive-indicator"
+                                }
+                                onClick={() => setCurrentSlide(index)}
                             ></button>)
                         :null
                 

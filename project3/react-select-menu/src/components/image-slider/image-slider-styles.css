@@ -2,7 +2,6 @@
     position:relative;
     width: 600px;
     height: 450px;
-    background-color: #555;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -46,4 +45,12 @@
     outline:none;
     margin: 0 0.2rem;
     cursor: pointer;
+}
+
+.hide-current-image{
+    display:none;
+}
+
+.inactive-indicator{
+    background-color:gray
 }
