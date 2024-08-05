@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import '../App.css'
 import useTicTacToe from '../hooks/use-tic-tac-toe'
 
 function TicTacToe() {
-  const {board,handleClick,calculateWinner,resetGame,getStatusMessage} =
-  useTicTacToe()
+  const {board,handleClick,resetGame,getStatusMessage} = useTicTacToe()
 
   return (
       <div className="game">
