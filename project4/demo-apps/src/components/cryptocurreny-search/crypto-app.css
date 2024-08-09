@@ -1,0 +1,16 @@
+.top-container{
+    min-height: 100vh;
+    padding-top: 30px;
+    background-color: beige;  
+    display: flex;
+    flex-direction: column;
+    font: 1em sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph-crypto{
+    font-size: 60px;
+    font-weight: bold;
+    display:inline; 
+}

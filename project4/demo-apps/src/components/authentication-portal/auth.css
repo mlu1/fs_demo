@@ -1,0 +1,16 @@
+.auth-container{
+    padding-top: 30px;
+    background-color: beige;  
+    display: flex;
+    flex-direction: column;
+    font: 1em sans-serif;
+    align-items: center;
+
+}
+
+.paragraph-auth{
+    font-size: 60px;
+    font-weight: bold;
+    display:inline; 
+}
+
