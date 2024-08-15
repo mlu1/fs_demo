@@ -5,7 +5,7 @@ const Header = () => (
   <>
     <header className="header">
       <div className="container-fluid">
-        <div className="row">
+        <div className="row-display">
           <div className="col-xl-3 col-lg-2">
             <div className="header__logo">
               <font>eStore</font>

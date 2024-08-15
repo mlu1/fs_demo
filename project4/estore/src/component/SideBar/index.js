@@ -15,21 +15,10 @@ const SideBar=()=>(
                         </div>
                         <div className="card-body">
                             <ul>
-                                <li>
-                                    <a>Coats</a>
-                                </li>
-                                <li>
-                                    <a>Jackets</a>
-                                </li>
-                                <li>
-                                    <a>Dresses</a>
-                                </li>
-                                <li>
-                                    <a>Shirts</a>
-                                </li>
-                                <li>
-                                    <a>Jackets</a>
-                                </li>
+                                <li><a href="#">Coats</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Shirts</a></li>
                             </ul>
                         </div>
                     </div>
@@ -38,6 +27,5 @@ const SideBar=()=>(
         </div>
     </div>
 )
-
 
 export default SideBar;
