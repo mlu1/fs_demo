@@ -1,6 +1,4 @@
-$my-color:#fff;
-
-
+@import '../../style/sass/variables';
 .row-display{
   display: flex;
   flex-direction: row;
@@ -53,7 +51,6 @@ $my-color:#fff;
 .a:last-child::after{
   display: none;
 }
-
 
 .widget{
   list-style: none;

@@ -11,14 +11,22 @@ const SideBar=()=>(
                 <div className="accordian">
                     <div className="card">
                         <div className="card-heading">
-                            <a href = "#">Women</a>
+                            <a>Women</a>
                         </div>
                         <div className="card-body">
                             <ul>
-                                <li><a href="#">Coats</a></li>
-                                <li><a href="#">Jackets</a></li>
-                                <li><a href="#">Dresses</a></li>
-                                <li><a href="#">Shirts</a></li>
+                                <li>
+                                    <a href="#">Coats </a>
+                                </li>
+                                <li>
+                                    <a href="#">Jackets </a>
+                                </li>
+                                <li>
+                                    <a href="#">Dresses </a>
+                                </li>
+                                <li>
+                                    <a href="#">Shirts </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

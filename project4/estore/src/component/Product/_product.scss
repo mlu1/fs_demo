@@ -1,0 +1,28 @@
+@import '../../style/sass/mixin.scss';
+
+.product_item{
+    margin-bottom: 30px;
+    &:hover{
+        .product_hover{
+            li{
+                opacity: 1;
+                top:0;
+            }
+        }
+    }
+}
+
+.product_hover{
+    position: absolute;
+    text-align: center;
+    bottom: 30px;
+    left: 0;
+    width:100%;
+    li{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        opacity: 0;
+        margin-right: 10px;
+    }
+}
