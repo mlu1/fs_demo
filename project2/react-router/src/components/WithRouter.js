@@ -8,5 +8,4 @@ export const withRouter = (Component) => {
 	return Wrapper;
 };
 
-
 export default withRouter;
