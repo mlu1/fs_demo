@@ -1,12 +1,14 @@
 @import '../../style/sass/_variables.scss';
 
 .sidebar_category{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     .section-title{
         h4{
             font-size:18px;
             color:black;
             text-transform: uppercase;
+            position: relative;
+            display: inline-block;
             &:last-child{
                 &:after{
                     display: block;
@@ -80,7 +82,6 @@
     }
   }
 }
-
 
 .category_accordian .card-heading a:after,
 .category_accordian .card-heading > a.active[aria-expanded="false"]:after {
