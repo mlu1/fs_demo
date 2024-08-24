@@ -6,25 +6,21 @@ interface Props{
     isMarried:boolean
 }
 
-export const Person =(props:Props)=>{
-    const [isShowInfo,setShowInfo] = useState<boolean>(false)
+export const User =(props:Props)=>{
+    const [personBio,setpersonBio] = useState<string|null>(null)
 
-    const toggleInfo = ()=>{
-        setShowInfo((prev) => !prev )
+    
+    const handleChange =(event:React.ChangeEvent<HTMLInputElement>)=>{
+        setpersonBio(event.target.value)
     }
-
     return(
         <div>    
-            {
-                isShowInfo &&  (<>
-                    <p>{props.name}</p> 
-                    <p>{props.age}</p> 
-                    <p>{props.isMarried?"is married":"not married"}</p>
-                    </>
-            )}
-            <p>{props.name} Personal Bio</p>
-            <input/>
-            <button onClick={toggleInfo}>Toggle Info</button>
+            <p>{props.name}</p> 
+            <p>{props.age}</p> 
+            <p>{props.isMarried?"is married":"not married"}</p>
+
+            <p>{props.name} Personal Bio {!personBio ? "NoBio":personBio}</p>
+            <input onChange={handleChange}/>
         </div>
     );
 }

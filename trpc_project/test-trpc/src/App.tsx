@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Person } from './Person'
+import { User } from './Person'
+import { UserProvider } from './UserContextProvider'
 import "./App.css"
 
 function App() {
@@ -11,11 +12,11 @@ function App() {
     const userFetched =fetchUser();
   return ( 
     <>
-      <Person name ={userFetched.name} 
+      <UserProvider name ={userFetched.name} 
               age = {userFetched.age}
               isMarried = {userFetched.isMarried}/>
               {" "}
-      <Person name ={"Carlos"} age = {34} isMarried={true}/>{" "}
+      <UserProvider name ={"Carlos"} age = {34} isMarried={true}/>{" "}
     </>
     )}
 export default App
