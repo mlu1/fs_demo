@@ -1,0 +1,5 @@
+
+> @t3/trpc-server-demo@1.0.0 dev C:\Users\mlumt\Work\fs_demo\project4\trpc-server-demo
+> ts-node-dev src/index.ts
+
+[INFO] 15:01:39 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)

@@ -1,0 +1,138 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.2",
+  "deps": {
+    "@trpc/server": "^10.45.2",
+    "@typegoose/typegoose": "^12.6.0",
+    "@types/cors": "^2.8.17",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongose": "0.0.2-security",
+    "zod": "^3.23.8",
+    "@types/express": "^4.17.21",
+    "ts-node-dev": "^2.0.0",
+    "nx": "19.6.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "@t3/trpc-server-demo": [
+        {
+          "file": "nx.json",
+          "hash": "2933536800231048536"
+        },
+        {
+          "file": "package.json",
+          "hash": "25218153688315074",
+          "deps": [
+            "npm:@types/express",
+            "npm:ts-node-dev",
+            "npm:@trpc/server",
+            "npm:@typegoose/typegoose",
+            "npm:@types/cors",
+            "npm:cors",
+            "npm:dotenv",
+            "npm:express",
+            "npm:mongose",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "pnpm-lock.yaml",
+          "hash": "2582788085410779367"
+        },
+        {
+          "file": "src/.env",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app.ts",
+          "hash": "9076737613303166920"
+        },
+        {
+          "file": "src/index.ts",
+          "hash": "2673649542063118688"
+        },
+        {
+          "file": "src/trpc.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "ts.config.json",
+          "hash": "16567987811845575349"
+        },
+        {
+          "file": ".nx/workspace-data/file-map.json",
+          "hash": "8371668345506327950"
+        },
+        {
+          "file": ".nx/workspace-data/project-graph.json",
+          "hash": "13824899986883074021"
+        },
+        {
+          "file": ".nx/workspace-data/parsed-lock-file.json",
+          "hash": "7578223569056614160"
+        },
+        {
+          "file": ".nx/workspace-data/lockfile.hash",
+          "hash": "11866010114438063282"
+        },
+        {
+          "file": "node_modules/.pnpm/strong-log-transformer@2.1.0/node_modules/strong-log-transformer/index.js",
+          "hash": "17262177593164311967"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/8634895846277932435",
+          "hash": "14419423462676499713"
+        },
+        {
+          "file": ".nx/cache/run.json",
+          "hash": "4859571850594000493"
+        },
+        {
+          "file": ".nx/workspace-data/task-history.csv",
+          "hash": "13308325297610924141"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/1363243731391574397",
+          "hash": "14419423462676499713"
+        },
+        {
+          "file": "node_modules/.pnpm/concat-map@0.0.1/node_modules/concat-map/index.js",
+          "hash": "13640529252182243718"
+        },
+        {
+          "file": "node_modules/.pnpm/resolve@1.22.8/node_modules/resolve/lib/normalize-options.js",
+          "hash": "15945563593306792513"
+        },
+        {
+          "file": "node_modules/.pnpm/resolve@1.22.8/node_modules/resolve/lib/core.js",
+          "hash": "4743128749200249046"
+        },
+        {
+          "file": "node_modules/.pnpm/resolve@1.22.8/node_modules/resolve/lib/caller.js",
+          "hash": "14758251208943980"
+        },
+        {
+          "file": "node_modules/.pnpm/@tsconfig+node16@1.0.4/node_modules/@tsconfig/node16/tsconfig.json",
+          "hash": "13471481104100038297"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/3974596686918615158",
+          "hash": "14302963577966419570"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/4845828717305320460",
+          "hash": "8088042678765164428"
+        },
+        {
+          "file": ".nx/workspace-data/d/daemon.log",
+          "hash": "7194441959732010555"
+        }
+      ]
+    }
+  }
+}
