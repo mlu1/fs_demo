@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState,useContext } from "react"
+import { UserContext } from "./UserContextProvider"
+
 
 interface Props{
     name:String,
@@ -13,6 +15,8 @@ export const User =(props:Props)=>{
     const handleChange =(event:React.ChangeEvent<HTMLInputElement>)=>{
         setpersonBio(event.target.value)
     }
+
+    const {users,updateUser,deleteUser} =useContext(useContext)
     return(
         <div>    
             <p>{props.name}</p> 
@@ -21,6 +25,10 @@ export const User =(props:Props)=>{
 
             <p>{props.name} Personal Bio {!personBio ? "NoBio":personBio}</p>
             <input onChange={handleChange}/>
+            <div>
+                <span>Delete ALLL</span>
+                <button>Press ME</button>
+            </div>
         </div>
     );
 }
