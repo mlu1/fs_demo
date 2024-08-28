@@ -12,8 +12,8 @@ function App() {
   return (
     <div>
       <h1>React 2024</h1>
-      {/*<ProductList name = "mlu" city= "ABC" listOfProducts= {dummyProductsData}/>*/}
-      <ClassBasedComponent/>
+      <ProductList name = "mlu" city= "ABC" listOfProducts= {dummyProductsData}/>
+      {/*&<ClassBasedComponent/>*/}
     </div>
   )
 }

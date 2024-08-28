@@ -1,7 +1,6 @@
 import styles from './product-item.module.css'
 
 function ButtonField (){
-    console.log(styles.buttonStyle)
     return (
         <button className={styles.buttonStyle}>Click Me</button>
     )

@@ -1,22 +1,50 @@
+import { useState,useEffect} from "react";
 import ProductItem from "./components/product-item";
 import './style.css';
+
+const initialState = true
  
 function ProductList({name,city,listOfProducts}){
-    const flag = false;
+    
+    const [flag,setFlag] = useState(initialState)
+    const [count,setCount] = useState(0)
+    const [changeStyle,setChangeStyle] = useState(false)
 
-    function renderTextBlock(getFlag){
-        getFlag ? (<h4>Name is {name} and city is {city}</h4>):(<h3>Hello World</h3>)
+    function handleToggleText(){
+        setFlag(!flag)
+    }
+
+    function handleIncreaseCount(){
+        setCount(count+1);
     }
     
-    return <div>
-        <h3 className="title">eCommerce Project </h3>
-        {renderTextBlock(flag)}
-        <ul>
-            {
-                listOfProducts.map((item,index) => (<ProductItem singleProductItem = {item} key={index}/>))
-            }
-        </ul>
-    </div>
+    useEffect(()=>{
+        if (count === 10){
+            setChangeStyle(true);
+        }   
+    },[count]) //this will run only once on page load
+
+    return (
+        <div>
+            <h3 className="title">eCommerce Project </h3>
+            <button onClick={handleToggleText}>ToggleText</button>
+                {flag ? (
+                    <h4>{name} and {city}</h4>
+                ):(
+                    <h4>Hello</h4>
+                )}
+                <div>
+                    <button 
+                    style={{backgroundColor:changeStyle? 'black':'red'}}
+                    onClick={handleIncreaseCount}>Increase</button>
+                    <p>{count}</p></div>
+                <ul>
+                    {
+                        listOfProducts.map((item,index) => (<ProductItem singleProductItem = {item} key={index}/>))
+                    }
+                </ul>
+        </div>
+        )    
 }
 
-export default ProductList
+export default ProductList;
