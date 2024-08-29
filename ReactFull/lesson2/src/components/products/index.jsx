@@ -35,7 +35,7 @@ function ProductList({name,city,listOfProducts}){
                 )}
                 <div>
                     <button 
-                    style={{backgroundColor:changeStyle? 'black':'red'}}
+                    style={{backgroundColor:changeStyle ? 'black':'white',color:changeStyle ? '#ffffff' : '#000000'}}
                     onClick={handleIncreaseCount}>Increase</button>
                     <p>{count}</p></div>
                 <ul>
