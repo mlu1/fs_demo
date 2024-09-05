@@ -19,7 +19,15 @@ function ProductList({name,city,listOfProducts}){
     }
     
     useEffect(()=>{
-        if (count === 10){
+        setFlag(!flag)
+        console.log('component is run only once')
+        return ()=>{
+            console.log('component is unmounted')
+        }
+    },[])
+
+    useEffect(()=>{
+        if (count == 10){
             setChangeStyle(true);
         }   
     },[count]) //this will run only once on page load
@@ -46,5 +54,4 @@ function ProductList({name,city,listOfProducts}){
         </div>
         )    
 }
-
 export default ProductList;
