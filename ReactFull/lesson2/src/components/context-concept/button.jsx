@@ -1,4 +1,12 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { GlobalContext } from "../../context"
+
 export default function ContextButtonComponent(){
-    return (<button> Mluleki</button>)
+    const {setTheme,theme} = useContext(GlobalContext)
+    
+    const handleThemeChange =()=>{
+        setTheme(theme=='light'?'dark':'light')
+    }
+   
+    return (<button onClick={handleThemeChange}> Mluleki</button>)
 }
