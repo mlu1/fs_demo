@@ -4,6 +4,8 @@ import ClassBasedComponent from './components/class-based-component'
 import FunctionalComponent from './components/functional-component'
 import ProductList from './components/products'
 import Users from './components/users'
+import ContextButtonComponent from './components/context-concept/button'
+import ContextTextComponent from './components/context-concept/text'
 
 const dummyProductsData = ['Product 1','Product 2','Product 3','Product 4'];
 
@@ -13,7 +15,9 @@ function App() {
       <h1>React 2024</h1>
       {/*{<ProductList name = "mlu" city= "ABC" listOfProducts= {dummyProductsData}/>
       &<ClassBasedComponent/>*/}
-      <Users/>
+      {/*<Users/>*/}
+      <ContextButtonComponent/>
+      <ContextTextComponent/>
     </div>
   )
 }
