@@ -7,7 +7,7 @@ export default function TodoDetails({openDialog,todoDetails,setOpenDialog}){
             <Dialog open ={openDialog}>
                     <DialogTitle>{todoDetails?.todo}</DialogTitle>
                         <DialogActions>
-                            <Button onClick ={()=>setOpenDialog(false)}>Close</Button>
+                            <Button onClick ={()=>setOpenDialog()}>Close</Button>
                         </DialogActions>
             </Dialog>
         </Fragment>

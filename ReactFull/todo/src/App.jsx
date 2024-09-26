@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import classes from './components/styles.module.css'
 import TodoItem from "./components/todo-item";
 import TodoDetails from "./components/todo-detaills";
+import { Skeleton } from "@mui/material";
 
 function App() {
   const [loading,setLoading] = useState(false)
@@ -10,7 +11,6 @@ function App() {
   const [todoDetails,setTodoDetails] = useState(null)
   const [openDialog,setOpenDialog] = useState(false)
   
-
 
   async function fetchListTodo() {
    try{
@@ -55,12 +55,17 @@ function App() {
       }
   }
   
-  
   /*run  on page load!*/
-
   useEffect(()=>{
     fetchListTodo()
   },[])
+  
+  if(loading){
+    return (
+      <Skeleton varriant ="rectangulat" width = {650} height={650}/>
+      )
+    }
+  
 
   return (
     <div className={classes.mainwrapper}>
