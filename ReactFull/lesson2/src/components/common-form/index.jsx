@@ -1,7 +1,8 @@
-function CommonForm({formControls}){
+import CommonInput from "../common-input"
+function CommonForm({formControls = [],formData,setFormData}){
     return (
         <form>
-                <input/>
+            <CommonInput/>
         </form>
     )
 }
