@@ -8,6 +8,9 @@ import ContextButtonComponent from './components/context-concept/button'
 import ContextTextComponent from './components/context-concept/text'
 import UseReducerExample from './components/use-reducer-example'
 import FormComponent from './components/form'
+import RegisterComponent from './components/register'
+import LoginComponent from './components/login'
+
 const dummyProductsData = ['Product 1','Product 2','Product 3','Product 4'];
 
 function App() {
@@ -23,7 +26,11 @@ function App() {
         */
       }
       {/*<UseReducerExample/>*/}
-      <FormComponent/>
+      {/*<FormComponent/>*/}
+      <div style={{display:'flex',gap:'20px'}}> 
+          <LoginComponent/>
+          <RegisterComponent/>
+      </div>
     </div>
   )
 }
