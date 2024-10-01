@@ -20,21 +20,19 @@ function App() {
   return (
     <BrowserRouter>
      <Routes>
-        {/*<Route exact path ='/home' element = {<Home/>}/>*/}
-        {/*<ScrollIndicator url = {'https://dummyjson.com/products?limit=100'} >*/}
+      <Route exact path ='/scroll' element ={<ScrollIndicator url = {'https://dummyjson.com/products?limit=100'}/>}/>
         {/*<Accordian/>*/}
-        {/* <RandomColor/>*/}
-        {/*<StarRating noOfStars = {10}/>*/}
-        {/*<ImageSlider
+      <Route exact path ='/random' element ={<RandomColor/>}/>
+      <Route exact path ='/star' element ={<StarRating noOfStars = {10}/>}/>
+      <Route exact path ='/images' element ={<ImageSlider
         urls = {"https://picsum.photos/v2/list"} 
-        page ={"1"} limit={"10"}/>*/
-        }
-        {/*<LoadMoreData/>*/}
-        {/*<TreeView menus= {menus}/>*/}
-        {/*<Route exact path ='/qr_code' element = {<QRCodeGenerator/>}/>*/}
-        {/*<Route exact path ='/light'   element ={<LightDarkMode/>}/>*/}
-        {/*<Route exact path ='/home' element ={<TabsTest/>}/>*/}
-        <Route exact path ='/home' element ={<ModalTest/>}/>
+        page ={"1"} limit={"10"}/>}/>
+        <Route exact path ='/load' element = {<LoadMoreData/>}/>
+        <Route exact path ='/tree' element ={<TreeView menus= {menus}/>}/>
+        <Route exact path ='/qrcode' element = {<QRCodeGenerator/>}/>
+        <Route exact path ='/light'   element ={<LightDarkMode/>}/>
+        <Route exact path ='/tabs' element ={<TabsTest/>}/>
+        <Route exact path ='/modals' element ={<ModalTest/>}/>
       </Routes>
     </BrowserRouter>
   );
