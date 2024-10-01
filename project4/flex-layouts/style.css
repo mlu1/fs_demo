@@ -1,7 +1,7 @@
 .main{
     display: flex;
     flex-direction: row;
-    width: 1000x;
+    width: 1000;
     height:80vh;
     flex-wrap: wrap;
     justify-content: center;
