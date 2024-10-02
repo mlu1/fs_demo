@@ -1,6 +1,8 @@
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client" ;
 import {AppRouter} from "../../server/api"
 import { link } from "fs";
+import {userRouter} from "./users"
+
 
 const client = createTRPCProxyClient<AppRouter>({
     links:[httpBatchLink({
@@ -19,7 +21,7 @@ async function AnotherMain() {
 }
 
 async function UsersCall() {
-    const userResults = await client.users.getUser.query()
+    const userResults = await 
     console.log(userResults)
 }
 

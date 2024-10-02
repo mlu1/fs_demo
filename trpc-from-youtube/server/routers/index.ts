@@ -17,6 +17,5 @@ export const appRouter = t.router({
         console.log(`Client Says: ${req.input}`)
         return true;
     }),
-    users:userRouter,
 })
 
