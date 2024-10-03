@@ -1,13 +1,6 @@
 import React from "react"
+import { IState as IProps} from "../App" 
 
-interface IProps {
-    people :{
-      name:string,
-      age:number,
-      url:string,
-      note?:string
-    }[]
-}
 
 const List:React.FC<IProps> =({people})=>{
     const renderList=():JSX.Element[]=>{
@@ -20,15 +13,14 @@ const List:React.FC<IProps> =({people})=>{
                     </div>
                     <p>{person.age} years old</p>
                     <p className="List-note">{person.note}</p>
-              </li>
+                    </li>
               )
   
         }))
     }
-
     return(
-        <ul>{renderList()}</ul>
-    )
+            <ul>{renderList()}</ul>
+        )
 }
 
 export default List
