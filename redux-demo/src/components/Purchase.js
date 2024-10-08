@@ -1,4 +1,4 @@
-const Purchase= ()=>{
+const Purchase = ()=>{
     const products = [
         {pName:'Apple',price:20},
         {pName:'Banana',price:3},
@@ -8,8 +8,8 @@ const Purchase= ()=>{
 
     return(
         <div className="customDiv">
-             <h3>Purchase Component</h3>
-             <hr/>
+            <h3>Purchase Component</h3>
+            <hr/>
             <select>
                 {
                     products.map((product,index)=>{
