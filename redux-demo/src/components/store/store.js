@@ -12,6 +12,12 @@ const initData = {
 }
 
 const reducer=(state = initData,action)=>{
+    if(action.type ==='PURCHASE'){
+        return {
+                ...state,
+                cart:[...state.cart,action.payLoad],
+            }
+    }
     return state
 }
 
