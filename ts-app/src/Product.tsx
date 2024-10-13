@@ -1,3 +1,4 @@
+import React from "react";
 interface Props{
     pCode:number;
     pName:string;
