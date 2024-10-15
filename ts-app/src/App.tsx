@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import Product from './Product';
 
@@ -6,7 +6,8 @@ function App() {
   const[counter,setCounter] = useState<number>(0);
   const [txt,setText] = useState<string>('')
   const [selectText,setSelectText] = useState<string>('')
- 
+  const inputRef = useRef<HTMLInputElement>(null);
+
   const btnHandler = (e:React.MouseEvent<HTMLButtonElement>):void=>{
     setCounter(counter+1)
   }
@@ -18,6 +19,11 @@ function App() {
   const handleSelectChange = (e:React.ChangeEvent<HTMLSelectElement>):void=>{
       setSelectText(e.target.value)
   }
+
+  const useRefbtnHandler =(e:React.MouseEvent<HTMLButtonElement>):void=>{
+        inputRef.current?.focus()
+  }
+
 
   return (
     <div className="App">
@@ -37,6 +43,13 @@ function App() {
         <option value={"Grapes"}>Grapes</option>
         <option value={"Orange"}>Oranges</option>
       </select>
+      <div>
+          <h1>Trying useRef</h1>
+          <input type="text"/><br/>
+          <input type="text" ref={inputRef} /><br/>
+          <button onClick={useRefbtnHandler}> Set Focus</button>
+      </div>
+
     </div>
   );
 }
