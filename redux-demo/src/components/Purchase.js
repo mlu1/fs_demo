@@ -7,7 +7,7 @@ const Purchase = ()=>{
         let pName = e.target.options[e.target.selectedIndex].text;
         let price = e.target.value;
         let obj = {pName,price}
-        dispatch({type:'PURCHASE',payload:obj});
+        dispatch({type:'PURCHASE',payLoad:obj});
     }
 
     return(
