@@ -1,0 +1,19 @@
+{
+  "name": "test_inquirer",
+  "version": "1.0.0",
+  "description": "testing inquirer",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mluleki mtande",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
