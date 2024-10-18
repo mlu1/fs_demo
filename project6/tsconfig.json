@@ -6,5 +6,11 @@
        "src/two.ts",
        "src/internal",
        "src/**/*.internal.ts"
+   ],
+   "include": [
+        "src/one.ts",
+        "src/**/*.external.ts",
+        "src/foo.ts",
+        "src/m???.ts"
    ]
 }
