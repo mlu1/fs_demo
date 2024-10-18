@@ -1,23 +1,10 @@
 {
-    "extends":"/tsconfig.base",
-    "compilerOptions": {
-        "allowJs": true,
-    },
-    "files": [
-    ],
-    "include": [
-    ],
-    "exclude": [
-        "node_modules"
-    ],
-    "typeAcquisition": {
-        "enable": false
-    },
-    "compileOnSave": false,
-    "atom":{
-
-    },
-    "angularCompilerOptions":{
-            
-    }
+   "compilerOptions": {
+    "outDir": "./dist"
+   },
+   "exclude":[
+       "src/two.ts",
+       "src/internal",
+       "src/**/*.internal.ts"
+   ]
 }
