@@ -1,0 +1,23 @@
+{
+    "extends":"/tsconfig.base",
+    "compilerOptions": {
+        "allowJs": true,
+    },
+    "files": [
+    ],
+    "include": [
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "typeAcquisition": {
+        "enable": false
+    },
+    "compileOnSave": false,
+    "atom":{
+
+    },
+    "angularCompilerOptions":{
+            
+    }
+}
