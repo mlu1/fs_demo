@@ -2,6 +2,9 @@
     "compilerOptions": {
         "outDir": "./dist",
         "noEmit":false,
-        "noEmitOnError": false
+        "noEmitOnError": false,
+        "declaration": true,
+        "declarationDir": "./typings",
+        "stripInternal": true,
     }
 }
