@@ -3,6 +3,19 @@ interface Obj{
     foo?:number
 }
 
+interface Person{
+    name:string,
+    age:number,
+}
+
+const john :Person = {
+    name:'John',
+    age:45
+}
+
+console.log(john.name)
+
+
 let foo:string = 'bar'
 
 function add (a:number,b:number):number{
