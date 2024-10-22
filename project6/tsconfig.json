@@ -11,6 +11,6 @@
         "inlineSourceMap": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
-        "suppressImplicitAnyIndexErrors": false
+    
     }
 }

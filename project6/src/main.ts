@@ -30,3 +30,35 @@ obj['bar'] = 10
 obj['foo'] = 29
 
 add(1,3)
+
+let x = 0
+
+loop :while(x<10){
+    x++
+}
+function lesson9(){
+    return;
+    {
+        x:true
+    }
+}
+
+function log(msg:string,flag:boolean){
+    const MEANING_OF_LIFE = 42
+    if(msg.length>4){
+        return null
+    }
+    console.log(msg)
+}
+
+function compare(arg:any){
+    
+    switch(typeof arg){
+        case 'number':
+        case 'string':
+            console.log('Fallthrough case')
+            break
+        default:
+            console.log('Default case')
+    }
+}
