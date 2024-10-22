@@ -1,6 +1,11 @@
-/** @internal*/
-function main() {
-    console.log('Typescript Pro!');
+var foo = 'bar';
+function add(a, b) {
+    return a + b;
 }
-function foo() { }
-main();
+var obj = {
+    bar: 10,
+};
+obj['bar'] = 10;
+obj['foo'] = 29;
+add(1, 3);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9tYWluLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBLElBQUksR0FBRyxHQUFVLEtBQUssQ0FBQTtBQUV0QixTQUFTLEdBQUcsQ0FBRSxDQUFRLEVBQUMsQ0FBUTtJQUMzQixPQUFPLENBQUMsR0FBQyxDQUFDLENBQUE7QUFDZCxDQUFDO0FBRUQsSUFBTSxHQUFHLEdBQU87SUFDWixHQUFHLEVBQUMsRUFBRTtDQUNULENBQUE7QUFFRCxHQUFHLENBQUMsS0FBSyxDQUFDLEdBQUcsRUFBRSxDQUFBO0FBQ2YsR0FBRyxDQUFDLEtBQUssQ0FBQyxHQUFHLEVBQUUsQ0FBQTtBQUVmLEdBQUcsQ0FBQyxDQUFDLEVBQUMsQ0FBQyxDQUFDLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbnRlcmZhY2UgT2Jqe1xyXG4gICAgYmFyOm51bWJlcixcclxuICAgIGZvbz86bnVtYmVyXHJcbn1cclxuXHJcbmxldCBmb286c3RyaW5nID0gJ2JhcidcclxuXHJcbmZ1bmN0aW9uIGFkZCAoYTpudW1iZXIsYjpudW1iZXIpOm51bWJlcntcclxuICAgIHJldHVybiBhK2JcclxufVxyXG5cclxuY29uc3Qgb2JqOk9iaiA9IHtcclxuICAgIGJhcjoxMCxcclxufVxyXG5cclxub2JqWydiYXInXSA9IDEwXHJcbm9ialsnZm9vJ10gPSAyOVxyXG5cclxuYWRkKDEsMylcclxuIl19

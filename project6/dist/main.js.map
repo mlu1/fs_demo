@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","sourceRoot":"","sources":["../main.ts"],"names":[],"mappings":"AAAA,eAAe;AACf,SAAS,IAAI;IACT,OAAO,CAAC,GAAG,CAAC,iBAAiB,CAAC,CAAA;AAClC,CAAC;AACD,IAAI,EAAE,CAAA","sourcesContent":["/** @internal*/\r\nfunction main(){\r\n    console.log('Typescript Pro!')\r\n}\r\nmain()\r\n"]}
