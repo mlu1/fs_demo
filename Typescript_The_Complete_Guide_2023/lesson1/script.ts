@@ -7,7 +7,10 @@ let emp:{
     salary:number,
     address:{
         country:string,
-        city:string
+        city:string,
+        area:string
+    },
+    display:()=>{
     }
 }
 
@@ -17,8 +20,16 @@ emp = {
     salary:1000,
     address:{
         country:'India',
-        city:'New Dehli'
-    }
+        city:'New Dehli',
+        area:'MBA'
+    },
+    display(){
+        console.log(this.empName)
+    },
 };
 
-console.log(emp)
+
+let names:number[] = [1,2,3,4,5]
+names.push(7)
+console.log(names)
+

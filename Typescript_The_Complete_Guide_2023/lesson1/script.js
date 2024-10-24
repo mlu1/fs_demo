@@ -1,9 +1,21 @@
+"use strict";
 /**
  * Objects
  */
-var emp = {
-    empName: "Mluleki",
-    companyName: "ABC",
+let emp;
+emp = {
+    empName: "Mlu",
+    companyName: "ABC123",
     salary: 1000,
+    address: {
+        country: 'India',
+        city: 'New Dehli',
+        area: 'MBA'
+    },
+    display() {
+        console.log(this.empName);
+    },
 };
-console.log(emp);
+let names = [1, 2, 3, 4, 5];
+names.push(7);
+console.log(names);
