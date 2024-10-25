@@ -117,3 +117,24 @@ displayLog(LogLevel.INFO,"ALL GOOD")
 displayLog(LogLevel.ERROR,"ARRAY INDEX ISSUE")
 displayLog(LogLevel.WARNING,"CODE PATH NOT COVERED")
 
+/*
+    Tuples
+*/
+
+let t = [1,"AAB",true]
+
+function displayTuple(pair:[string,number]){
+    console.log(pair[0]);
+    console.log(pair[1]);
+}
+
+displayTuple(['Mluleki',1])
+
+
+function displayTupleParams([empName,empId]:[string,number]){
+    console.log("Name:" +empName);
+    console.log("Id:" +empId);
+    
+}
+
+displayTupleParams(['mlu',10])
