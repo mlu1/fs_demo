@@ -71,3 +71,49 @@ console.log(n1)
 
 //Array with constructor
 let arr = new Array(1,2)
+
+//Union
+let n:number| string = 'ABC';
+
+function display(param: string|number|boolean){
+    console.log(param)
+}
+
+display('abc')
+display(123)
+display(true)
+display(n)
+
+enum LogLevel{
+    ERROR =6,
+    INFO=10,
+    WARNING=15
+}
+
+enum HttpStatus{
+    BADREQUEST=400,
+    INTERNALSERVERERROR = 500,
+
+}
+
+enum Directions{
+    UP = "Up",
+    DOWN = "Down",
+}
+
+function displayLog(logLevel:LogLevel,message:string){
+    if(logLevel === LogLevel.ERROR){
+        console.log("ERROR: "+message)
+    }else if(logLevel === LogLevel.INFO){
+        console.log("INFO: "+message )
+    }
+    else if(logLevel ===LogLevel.WARNING){
+        console.log("WARNING:"+message);
+    }
+    console.log(message)
+}
+
+displayLog(LogLevel.INFO,"ALL GOOD")
+displayLog(LogLevel.ERROR,"ARRAY INDEX ISSUE")
+displayLog(LogLevel.WARNING,"CODE PATH NOT COVERED")
+
