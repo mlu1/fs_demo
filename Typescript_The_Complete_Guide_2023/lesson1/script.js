@@ -1,7 +1,8 @@
+"use strict";
 /**
  * Objects
  */
-var emp;
+let emp;
 emp = {
     empName: "Mlu",
     companyName: "ABC123",
@@ -12,20 +13,20 @@ emp = {
         area: 'MBA'
     },
 };
-var names = [1, 2, 3, 4, 5];
-var surnames = [5, 4, 3, 2, 1];
+let names = [1, 2, 3, 4, 5];
+let surnames = [5, 4, 3, 2, 1];
 names.push(7);
-var upDatedNumbers = names.filter(function (n) { return n > 3; });
-var upDatedNumbers2 = names.map(function (n) { return n * 3; });
-for (var i = 0; i < 4; i++) {
+let upDatedNumbers = names.filter((n) => n > 3);
+let upDatedNumbers2 = names.map((n) => n * 3);
+for (let i = 0; i < 4; i++) {
     console.log(names[i]);
 }
-names.forEach(function (n) {
+names.forEach(n => {
     console.log(n);
 });
 console.log(upDatedNumbers);
 console.log(upDatedNumbers2);
-var listOfEmp = [
+let listOfEmp = [
     {
         eName: "Mlu",
         eSalary: 1200
@@ -39,17 +40,17 @@ var listOfEmp = [
     }
 ];
 console.log(listOfEmp);
-var listOfNames = listOfEmp.map(function (ob) { return ob.eName; });
-var listOfNamesUpdated1 = listOfEmp.filter(function (ob) { return ob.eSalary > 1000; });
+let listOfNames = listOfEmp.map(ob => ob.eName);
+let listOfNamesUpdated1 = listOfEmp.filter(ob => ob.eSalary > 1000);
 console.log(listOfNames);
 console.log(listOfNamesUpdated1);
 /**ARRAY DESTRUCTURING */
-var _a = [1, 2], n1 = _a[0], n2 = _a[1];
+let [n1, n2] = [1, 2];
 console.log(n1);
 //Array with constructor
-var arr = new Array(1, 2);
+let arr = new Array(1, 2);
 //Union
-var n = 'ABC';
+let n = 'ABC';
 function display(param) {
     console.log(param);
 }
@@ -91,14 +92,13 @@ displayLog(LogLevel.WARNING, "CODE PATH NOT COVERED");
 /**
  * Tuples
 */
-var t = [1, "AAB", true];
+let t = [1, "AAB", true];
 function displayTuple(pair) {
     console.log("Name: " + pair[0]);
     console.log("Id: " + pair[1]);
 }
 displayTuple(['Mluleki', 1]);
-function displayTupleParams(_a) {
-    var empName = _a[0], empId = _a[1];
+function displayTupleParams([empName, empId]) {
     console.log("Name:" + empName);
     console.log("Id:" + empId);
 }
@@ -106,7 +106,7 @@ displayTupleParams(['mlu', 10]);
 /**
  * Literals
 */
-var httpMethod = "GET";
+let httpMethod = "GET";
 function handlehttpRequest(url, method) {
     console.log(method + " :calling" + url);
 }
@@ -143,19 +143,14 @@ function add_modified(n1, n2, n3) {
 }
 console.log(add(5, 6));
 add_modified(5, 6, 8);
-function multiply(n4, n5, n6) {
-    if (n6 === void 0) { n6 = 0; }
+function multiply(n4, n5, n6 = 0) {
     return (n4 * n5 * n6);
 }
 /**
  * REST PARAMS
  */
-function displayLogs() {
-    var logs = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        logs[_i] = arguments[_i];
-    }
-    logs.forEach(function (log) {
+function displayLogs(...logs) {
+    logs.forEach((log) => {
         console.log(log);
     });
 }
@@ -163,6 +158,17 @@ displayLogs("LOG1", "LOG2", "LOG3", "LOG4");
 /**
  * Arrow functions
  */
-var addValues = function (n10, n11) {
+let addValues = (n10, n11) => {
     return (n10 + n11);
 };
+addValues(1, 2);
+let Stringify = () => {
+    return ("Hi");
+};
+Stringify();
+function takeAction(n13, n14, fun) {
+    return n13 + n14;
+}
+takeAction(1, 2, (n15, n16) => {
+    console.log((n15 / n16) * 3 * 4);
+});

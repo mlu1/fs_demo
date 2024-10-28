@@ -216,3 +216,13 @@ let Stringify = ()=>{
 }
 
 Stringify()
+
+function takeAction(n13:number,n14:number,fun:any):number{
+    return n13+n14;
+}
+
+takeAction(1,2,(n15:number,n16:number)=>{
+    console.log((n15/n16)*3*4)
+});
+
+
