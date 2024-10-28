@@ -117,15 +117,15 @@ displayLog(LogLevel.INFO,"ALL GOOD")
 displayLog(LogLevel.ERROR,"ARRAY INDEX ISSUE")
 displayLog(LogLevel.WARNING,"CODE PATH NOT COVERED")
 
-/*
-    Tuples
+/** 
+ * Tuples
 */
 
 let t = [1,"AAB",true]
 
 function displayTuple(pair:[string,number]){
-    console.log(pair[0]);
-    console.log(pair[1]);
+    console.log("Name: "+pair[0]);
+    console.log("Id: "+pair[1]);
 }
 
 displayTuple(['Mluleki',1])
@@ -133,8 +133,7 @@ displayTuple(['Mluleki',1])
 
 function displayTupleParams([empName,empId]:[string,number]){
     console.log("Name:" +empName);
-    console.log("Id:" +empId);
-    
+    console.log("Id:" +empId); 
 }
 
 displayTupleParams(['mlu',10])
@@ -170,3 +169,29 @@ function CompareValuesTernary(s3:string,s4:string){
 
 CompareValues("ABC","abc")
 CompareValuesTernary("BCD","bcd")
+
+/**
+ * Functions
+ */
+//optional parameter
+function add(n1:number,n2:number):number{
+    return (n1+n2)
+}
+
+function add_modified(n1:number,n2:number,n3?:number):void{
+    console.log(n1+n2+ (n3||0))
+}
+
+console.log(add(5,6))
+add_modified(5,6,8)
+
+function multiply(n4:number,n5:number,n6:number=0):number{
+    return(n4*n5*n6)
+}
+
+function displayLogs(log1:string,log2:string){
+    console.log(log1)
+}
+
+displayLogs("LOG 1","LOG 2")
+
