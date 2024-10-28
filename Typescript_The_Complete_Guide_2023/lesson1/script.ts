@@ -189,9 +189,30 @@ function multiply(n4:number,n5:number,n6:number=0):number{
     return(n4*n5*n6)
 }
 
-function displayLogs(log1:string,log2:string){
-    console.log(log1)
+/**
+ * REST PARAMS
+ */
+function displayLogs( ...logs:string[]){
+    logs.forEach((log)=>{
+        console.log(log)
+    })
 }
 
-displayLogs("LOG 1","LOG 2")
+displayLogs("LOG1","LOG2","LOG3","LOG4")
 
+/**
+ * Arrow functions
+ */
+
+let addValues = (n10:number,n11:number):number=>{
+    return (n10+n11)
+}
+
+addValues(1,2)
+
+
+let Stringify = ()=>{
+    return("Hi")
+}
+
+Stringify()

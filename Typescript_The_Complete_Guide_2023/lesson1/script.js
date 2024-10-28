@@ -147,7 +147,22 @@ function multiply(n4, n5, n6) {
     if (n6 === void 0) { n6 = 0; }
     return (n4 * n5 * n6);
 }
-function displayLogs(log1, log2) {
-    console.log(log1);
+/**
+ * REST PARAMS
+ */
+function displayLogs() {
+    var logs = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        logs[_i] = arguments[_i];
+    }
+    logs.forEach(function (log) {
+        console.log(log);
+    });
 }
-displayLogs("LOG 1", "LOG 2");
+displayLogs("LOG1", "LOG2", "LOG3", "LOG4");
+/**
+ * Arrow functions
+ */
+var addValues = function (n10, n11) {
+    return (n10 + n11);
+};
