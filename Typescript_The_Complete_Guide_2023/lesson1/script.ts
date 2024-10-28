@@ -138,3 +138,35 @@ function displayTupleParams([empName,empId]:[string,number]){
 }
 
 displayTupleParams(['mlu',10])
+
+/**
+ * Literals
+*/
+let httpMethod:"GET"| "POST" | "PUT" = "GET"
+
+function handlehttpRequest(url:string,method:"GET"| "POST"|"PUT"){
+    console.log(method+" :calling" +url)
+}
+
+handlehttpRequest("http://google.com","GET")
+handlehttpRequest("http://google.com","POST")
+
+/**
+ * Compare values in function and ternary operation
+ */
+function CompareValues(s1:string,s2:string):number{
+        if(s1 ===s2){
+            return 0
+        }
+        else if(s1 > s2){
+            return 1
+        }
+        else { return 2}
+}
+
+function CompareValuesTernary(s3:string,s4:string){
+    return s3===s4?-1:s3>s4?1:-1
+}
+
+CompareValues("ABC","abc")
+CompareValuesTernary("BCD","bcd")
