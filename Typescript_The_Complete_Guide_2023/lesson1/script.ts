@@ -55,6 +55,9 @@ let listOfEmp = [
     },{
         eName:"Phumis",
         eSalary:700
+    },{
+        eName:"Tetos",
+        eSalary:900
     }
 ]
 
@@ -210,19 +213,44 @@ let addValues = (n10:number,n11:number):number=>{
 
 addValues(1,2)
 
-
 let Stringify = ()=>{
     return("Hi")
 }
 
 Stringify()
-
 function takeAction(n13:number,n14:number,fun:any):number{
     return n13+n14;
 }
-
+/**
+ * function that takes another function as parameters
+ */
 takeAction(1,2,(n15:number,n16:number)=>{
     console.log((n15/n16)*3*4)
 });
 
+let subtractValues = function(n_1:number,n_2:number){
+    console.log(n_1-+n_2)
+}
+
+/**
+ * Function constructors
+ */
+ let multi = new Function("n1","n2","return n1*n2");
+console.log(multi(10,4))
+
+
+/**
+ * Casting 
+ */
+
+function displayLength(input:string|number):void{
+    if(typeof input ==='string'){
+        console.log((input as string).length)
+    }else{
+        console.log("Sorry length calculation is not possible")
+    }
+}
+
+displayLength("ABC")
+displayLength(2)
 
