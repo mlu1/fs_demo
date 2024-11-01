@@ -254,3 +254,9 @@ function displayLength(input:string|number):void{
 displayLength("ABC")
 displayLength(2)
 
+/**
+ * Casting HTML Example 
+ */
+
+let input = document.getElementById("input1") as HTMLInputElement
+console.log(input.value)

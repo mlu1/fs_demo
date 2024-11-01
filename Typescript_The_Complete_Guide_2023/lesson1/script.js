@@ -199,3 +199,8 @@ function displayLength(input) {
 }
 displayLength("ABC");
 displayLength(2);
+/**
+ * Casting HTML Example
+ */
+let input = document.getElementById("input1");
+console.log(input.value);
