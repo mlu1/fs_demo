@@ -20,11 +20,5 @@ async function AnotherMain() {
     console.log(results)  
 }
 
-async function UsersCall() {
-    const userResults = await 
-    console.log(userResults)
-}
-
 main()
 AnotherMain()
-UsersCall()

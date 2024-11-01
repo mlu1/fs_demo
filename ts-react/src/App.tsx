@@ -1,6 +1,5 @@
 import './App.css';
 import NameTag from './components/NameTag';
-import * as PropTypes from 'prop-types'
 import Box from './components/Box'
 
 

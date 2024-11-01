@@ -34,10 +34,10 @@ function makeConsoleLog(){
 }
 
 function addsToMyAge(incrementBy,multiplyBy){
-    my_Age = (incrementBy *multiplyBy)
+    let my_Age = (incrementBy *multiplyBy)
     return my_Age
 }
-new_age = addsToMyAge(5,8)
+let new_age = addsToMyAge(5,8)
 console.log("The new age "+new_age)
 
 
@@ -58,7 +58,6 @@ function shouldIgetALicense(my_age,bribe,whiteListed){
 
     if(my_age<=18 && bribe >100 ){
         console.log('You Pass [<18 and bribe >100]')
-        return 
     }
     else if(my_age > 18){
         console.log('This person is above 18[cool qualify]')

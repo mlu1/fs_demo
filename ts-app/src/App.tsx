@@ -4,7 +4,7 @@ import Product from './Product';
 
 function App() {
   const[counter,setCounter] = useState<number>(0);
-  const [txt,setText] = useState<string>('')
+  const [paragraphText,setparagraphText] = useState<string>('')
   const [selectText,setSelectText] = useState<string>('')
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -13,7 +13,7 @@ function App() {
   }
 
   const inputChangeHandler = (e:React.ChangeEvent<HTMLInputElement>):void=>{
-    setText(e.target.value)
+    setparagraphText(e.target.value)
   }
 
   const handleSelectChange = (e:React.ChangeEvent<HTMLSelectElement>):void=>{
@@ -32,7 +32,7 @@ function App() {
       <hr/>
       <button onClick={btnHandler}>Increment</button>
       <hr/>
-      <p>{txt}</p>
+      <p>{paragraphText}</p>
       <hr/>
       <input type = "text" onChange={inputChangeHandler} />
       <hr/>

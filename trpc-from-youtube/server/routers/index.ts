@@ -1,5 +1,4 @@
 import {t} from "../trpc"
-import {userRouter} from "./users"
 /*
     NOTES
     -procedures that allows us to interact with the server
