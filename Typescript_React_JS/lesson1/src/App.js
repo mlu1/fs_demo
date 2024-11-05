@@ -3,9 +3,9 @@ class App extends React.Component{
     state = {
         btn_color:'button-red'
     }
-    
+
     handleButtonClick =(event)=>{
-        this.setState({})
+        this.setState({btn_color:'button-grey'})
     }
     render(){
         return(
