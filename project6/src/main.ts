@@ -36,19 +36,14 @@ let x = 0
 loop :while(x<10){
     x++
 }
-function lesson9(){
-    return;
-    {
-        x:true
-    }
-}
 
 function log(msg:string,flag:boolean){
-    const MEANING_OF_LIFE = 42
     if(msg.length>4){
         return null
     }
-    console.log(msg)
+    else{
+        return msg.slice(0,2)
+    }
 }
 
 function compare(arg:any){
