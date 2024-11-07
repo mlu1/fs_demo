@@ -166,12 +166,7 @@ function CompareValues(s1:string,s2:string):number{
         else { return 2}
 }
 
-function CompareValuesTernary(s3:string,s4:string){
-    return s3===s4?-1:s3>s4?1:-1
-}
-
 CompareValues("ABC","abc")
-CompareValuesTernary("BCD","bcd")
 
 /**
  * Functions
