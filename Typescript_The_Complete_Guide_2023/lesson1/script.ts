@@ -176,12 +176,7 @@ function add(n1:number,n2:number):number{
     return (n1+n2)
 }
 
-function add_modified(n1:number,n2:number,n3?:number):void{
-    console.log(n1+n2+ (n3||0))
-}
-
 console.log(add(5,6))
-add_modified(5,6,8)
 
 function multiply(n4:number,n5:number,n6:number=0):number{
     return(n4*n5*n6)
@@ -240,7 +235,7 @@ console.log(multi(10,4))
 
 function displayLength(input:string|number):void{
     if(typeof input ==='string'){
-        console.log((input as string).length)
+        console.log(input.length)
     }else{
         console.log("Sorry length calculation is not possible")
     }
