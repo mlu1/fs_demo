@@ -27,7 +27,7 @@ function concatString(s1:string,s2:string):void{
 console.log(b,onAdd(2))
 compare(1,3)
 
-for(var i=0;i<5;i++){
+for(let i=0;i<5;i++){
     console.log(i)
 }
 
