@@ -14,9 +14,7 @@ export interface IState {
 }
 
 function App() {
-  const[count,setCounter] =useState<number|string>(5)
-
-
+ 
   /*Declared an IState*/
 
   const [people,setPeople] = useState<IState["people"]>([{

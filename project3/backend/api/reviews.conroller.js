@@ -45,7 +45,7 @@ export default class ReviewsController {
         review
       )
 
-      var { error } = reviewResponse
+      let { error } = reviewResponse
       if (error) {
         res.status(400).json({ error })
       }

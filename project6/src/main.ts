@@ -31,11 +31,6 @@ obj['foo'] = 29
 
 add(1,3)
 
-let x = 0
-
-loop :while(x<10){
-    x++
-}
 
 function log(msg:string,flag:boolean){
     if(msg.length>4){
