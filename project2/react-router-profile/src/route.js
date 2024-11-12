@@ -1,4 +1,4 @@
-import { Component, lazy } from "react"
+import { lazy } from "react"
 import Home from "./components/home"
 const Users = lazy(()=> import("./components/users"))
 const UserProfile = lazy(()=> import("./components/userProfile"))

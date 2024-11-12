@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import { useEffect, useState } from "react"
 import './style.css'
 export default function RandomColor() {

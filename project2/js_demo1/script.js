@@ -41,15 +41,6 @@ let new_age = addsToMyAge(5,8)
 console.log("The new age "+new_age)
 
 
-function conditionalFunction(agesParameter){
-    if (agesParameter > 18){
-        return true
-    }
-    else {
-        return false
-    }   
-}
-
 function shouldIgetALicense(my_age,bribe,whiteListed){
     if(whiteListed){
         console.log('You are banned',whiteListed)
@@ -70,14 +61,6 @@ function shouldIgetALicense(my_age,bribe,whiteListed){
 
 shouldIgetALicense(5,301,true)
 
-function conditionalFunction(agesParameter){
-    if (agesParameter > 18){
-        return true
-    }
-    else {
-        return false
-    }   
-}
 
 let myFriends = ['default']
 
