@@ -1,7 +1,8 @@
-type NameTagProps = {
-    name:string
-}
-const NameTag = ({name}:NameTagProps)=>{
+export type NameTagProps = {
+      name:string
+};
+
+const NameTag = (props:NameTagProps)=>{
     return (
         <main>
             <header>
@@ -9,7 +10,7 @@ const NameTag = ({name}:NameTagProps)=>{
                     <p>Name Is</p>
             </header>
             <section className="display-name">
-                    <p>{name}</p>
+                    <p>{props.name}</p>
             </section>
             <footer/>
         </main>

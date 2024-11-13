@@ -4,9 +4,7 @@ const amIAbove18 =true
 const myName = "Mluleki"
 const friends = [27,true,"neihul"]
 let someSpeialValue
-const beginNumber = 111111111111111111111111111111
 let a = 250;
-console.log(beginNumber);
 const typeofMyAge = typeof myAge
 
 console.log(typeofMyAge)
@@ -86,7 +84,6 @@ console.log(myFriends)
 
 
 let evenNumbers = []
-let oddNumbers = []
 let arr_numbers = [0,1,2,3,4,5,6,7,8,9,10]
 
 function skipNumbers(arr_input,skip_number){
@@ -95,7 +92,7 @@ function skipNumbers(arr_input,skip_number){
             evenNumbers.push(i)
         }
         else{
-            oddNumbers.push(i)
+            console.log(i,'Not an ODD Number')
         }
     }
     return evenNumbers
@@ -161,15 +158,7 @@ primitiveMutated(num)
 /*
     scoping- an area where a variable's lifetime is between curly braces
 */
-function x(){
-    const hello = 'world'
-    console.log(hello)
 
-    if(true){
-        console.log(hello)
-    }
-}
-x()
 /*
     Document manipulation
 */

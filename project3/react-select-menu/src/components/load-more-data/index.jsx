@@ -17,7 +17,7 @@ export default function LoadMoreData(){
             `);
             const result   = await response.json();
 
-            if(result && result.products && result.products.length){
+            if(result){
                 setproducts((prevData)=>[...prevData,...result.products])
                 setLoading(false)
             }
@@ -45,7 +45,7 @@ export default function LoadMoreData(){
     return (
         <div className="load-more-container">    
                 <div className="product-container">
-                    {products && products.length?
+                    {products?
                         products.map(item =>(
                         <div className="product" key = {item.id}>
                             <img src = {item.thumbnail} alt = {item.title}/>
