@@ -1,12 +1,12 @@
 import React from 'react'
 
-const UserCard = (props)=>{
+const UserCard = ({children})=>{
     return(
         <div className='ui card'>
             <div className='content'>
                 <div className='header'> Alex Tancredi</div>
                 <div className='desciprionn'>
-                    {props.children}
+                    {children}
                 </div>
             </div>
             <div className='ui bottom button'>

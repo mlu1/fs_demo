@@ -1,22 +1,22 @@
 import React from "react";
 
-const SingleComment =(props)=>{
+const SingleComment =({picture,name,date})=>{
     return(
             <div className='comment'>
                 <a href="/" className='avatar'>
-                    <img src = {props.picture} alt ="profile"/>
+                    <img src = {picture} alt ="profile"/>
                 </a>
                 <div className='content'>
                     <a href="/" className='author'>
-                            {props.name}
+                            {name}
                     </a>
                     <div className='metadata'>
                         <span className='date'>
-                            {props.date}
+                            {date}
                         </span>
                     </div>
                     <div className='text'>
-                        {props.text}
+                        {text}
                     </div>
                 </div>
             </div>
