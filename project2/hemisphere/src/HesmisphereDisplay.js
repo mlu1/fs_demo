@@ -2,6 +2,7 @@ import React from "react";
 import northernPic from  './images/northern.jpg'
 import southernPic from  './images/southern.jpg'
 import './hemisphere.css'
+import PropTypes from 'prop-types';
 
 const hemisphereConfig = {
     Northern:{

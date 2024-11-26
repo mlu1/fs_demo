@@ -1,4 +1,11 @@
 import React from "react";
+import PropTypes from prop-PropTypes;
+
+SingleComment.propTypes = {
+    picture: PropTypes.string.isRequired,
+    date:PropTypes.Date.isRequired,
+    text:PropTypes.string.isRequired
+  };
 
 const SingleComment =({picture,name,date})=>{
     return(
