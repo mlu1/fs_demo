@@ -7,7 +7,7 @@ const  App =()=>{
   return(
     <main>
       {questions.map((q)=>(
-        <Question question={q.question} answer={q.answer}/>
+        <Question key ={1} question={q.question} answer={q.answer}/>
       ))}
     </main>
   )

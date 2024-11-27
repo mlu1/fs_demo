@@ -1,5 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import PropTypes from 'prop-types'
+
+AuthProfile.propTypes={
+  username:PropTypes.string.isRequired
+}
 
 const AuthProfile = ({ username }) => {
   const [gitUserData, setGitUserData] = useState({});

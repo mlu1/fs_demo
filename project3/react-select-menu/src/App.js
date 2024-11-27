@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter,Route,Routes,Switch,Link  } from 'react-router-dom';
+import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Accordian from './components/accordian';
 import RandomColor from './components/random-color';
 import StarRating from './components/star-rating'
@@ -10,8 +10,6 @@ import menus from './components/tree-view/data';
 import QRCodeGenerator from './components/qr-code-generator';
 import LightDarkMode from './components/light-dark-mode';
 import ScrollIndicator from './components/scroll-indicator';
-import Home from './components/home-page'
-import NotFound from './components/not-found';
 import TabsTest from './components/custom-tabs/tabs-test';
 import ModalTest from './components/custom-modal-popup/modal-test';
 

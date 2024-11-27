@@ -22,7 +22,7 @@ export default function QRCodeGenerator(){
                  value={input}
                  />
                 <button 
-                 disabled = {input && input.trim() !== '' ?  false:true} 
+                 disabled = {input == '' ?  false:true} 
                  onClick={handleGenerateQrCode}>
                     Generate
                 </button>

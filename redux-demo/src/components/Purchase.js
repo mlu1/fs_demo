@@ -18,7 +18,7 @@ const Purchase = ()=>{
                 {
                     products.map((product,index)=>{
                         return(
-                        <option value ={product.price} key={index}>
+                        <option value ={product.price} key={`${product}-${index}`}>
                                 {product.pName} - ${product.price}
                         </option>)})
                 }

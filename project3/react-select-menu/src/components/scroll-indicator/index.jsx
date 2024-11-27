@@ -1,5 +1,10 @@
 import { useState,useEffect } from "react"
 import './scroll-styles.css'
+import PropTypes from 'prop-types'
+
+ScrollIndicator.propTypes = {
+    url:PropTypes.string.isRequired
+}
 
 export default function ScrollIndicator({url}){
     const [data,setData] = useState([]);

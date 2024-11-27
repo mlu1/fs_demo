@@ -4,16 +4,12 @@ export default function Modal({ id, header, body, footer, onClose }) {
         <div className="modal-content">
           <div className="header">
             <span onClick={onClose} className="close-modal-icon">&times;</span>
-            <span>{header ? header : "Header"}</span>
+            <span>{header}</span>
           </div>
           <div className="body">
-            {body ? (
-              body
-            ) : (
               <div>
-                <p>This is our Modal Body</p>
+                <p>This is our Modal Body {body}</p>
               </div>
-            )}
           </div>
           <div className="footer">{footer ? footer : <h2>Footer</h2>}</div>
         </div>

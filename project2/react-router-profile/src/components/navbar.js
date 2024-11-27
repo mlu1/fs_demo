@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { Outlet } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link,Outlet } from "react-router-dom";
 
 const Navbar = ({isLogged}) => {
   return (

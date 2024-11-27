@@ -1,13 +1,13 @@
-import React from "react"
 import { useState } from "react"
 
 type QuestionProps = {
+    key:number,
     question:string,
-    answer:string
+    answer:string,
   }
   
-const Question =({question,answer}:QuestionProps)=>{
-    const [hidden,toggleHidden] = useState(true)
+const Question =({key,question,answer}:QuestionProps)=>{
+    const [hidden,settoggleHidden] = useState<boolean>(true)
     return(
         <article className="question">
             <header>{question}</header>
@@ -15,7 +15,7 @@ const Question =({question,answer}:QuestionProps)=>{
                 <span className={`${hidden?'blurred':'visible'}`}></span>
             </p>
             <footer>
-                    <button onClick={()=>toggleHidden(!hidden)}></button>
+                    <button onClick={()=>settoggleHidden(!hidden)}></button>
             </footer>
         </article>
     )

@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
+
+SingleComment.propTypes = {
+    setIsLogged: PropTypes.boolean.isRequired,
+    setUsername:PropTypes.string.isRequired
+  };
+
 
 const Login = ({ setIsLogged, setUsername }) => {
   const [loginUsername, setLoginUsername] = useState("");
