@@ -1,3 +1,13 @@
+
+import PropTypes from prop-PropTypes;
+
+Modal.propTypes = {
+    id:PropTypes.string.isRequired,
+    header:PropTypes.element.isRequired,
+    body:PropTypes.element.isRequired,
+    footer:PropTypes.element.isRequired,
+  };
+
 export default function Modal({ id, header, body, footer, onClose }) {
     return (
       <div id={id || "Modal"} className="modal">

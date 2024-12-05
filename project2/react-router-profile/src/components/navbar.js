@@ -1,6 +1,11 @@
 import React from "react";
 import "./styles.css";
 import { Link,Outlet } from "react-router-dom";
+import PropTypes from prop-PropTypes;
+
+Navbar.propTypes = {
+    isLogged:PropTypes.boolean.isRequired,
+  };
 
 const Navbar = ({isLogged}) => {
   return (

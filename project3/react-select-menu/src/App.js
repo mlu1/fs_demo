@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
      <Routes>
       <Route exact path ='/scroll' element ={<ScrollIndicator url = {'https://dummyjson.com/products?limit=100'}/>}/>
-        {/*<Accordian/>*/}
+      <Route exact path ='/accordian' element ={<Accordian/>}/>
       <Route exact path ='/random' element ={<RandomColor/>}/>
       <Route exact path ='/star' element ={<StarRating noOfStars = {10}/>}/>
       <Route exact path ='/images' element ={<ImageSlider
