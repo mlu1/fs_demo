@@ -8,9 +8,9 @@ const Cart =()=>{
             <hr/>
             <ul>
                 {
-                    cart.map((product,index)=>{
+                    cart.map((product)=>{
                     return(
-                            <li key ={index}>{product.pName}
+                            <li key ={product}>{product.pName}
                             </li>
                         )
                     })

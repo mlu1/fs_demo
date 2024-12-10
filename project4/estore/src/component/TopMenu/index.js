@@ -12,8 +12,8 @@ const TopMenu=()=>{
                     <nav className="menu">
                         <ul>
                             {
-                                menu.map((item,index)=>(
-                                    <li key ={index}> 
+                                menu.map((item)=>(
+                                    <li key ={` _ ${item}`}> 
                                         <a href=""> {item}</a> 
                                     </li>
                                 )

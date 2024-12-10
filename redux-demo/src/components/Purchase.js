@@ -16,9 +16,9 @@ const Purchase = ()=>{
             <hr/>
             <select onChange={purchaseHandler}>
                 {
-                    products.map((product,index)=>{
+                    products.map((product)=>{
                         return(
-                        <option value ={product.price} key={`${product}-${index}`}>
+                        <option value ={product.price} key={$product}>
                                 {product.pName} - ${product.price}
                         </option>)})
                 }
