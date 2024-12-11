@@ -59,10 +59,7 @@ export default function ScrollIndicator({url}){
     },[])
 
     console.log(data,scrollPercentage)
-    if(loading){
-        <div>Loading data ! Please wait</div>
-    }
-
+  
     if(errorMessage){
         return <div> Error  {errorMessage} </div>
     }

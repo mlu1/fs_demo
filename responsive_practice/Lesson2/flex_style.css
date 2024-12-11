@@ -9,3 +9,7 @@
 figure{
     flex-basis:10% ;
 }
+
+.span2{
+    flex-basis: 48%;
+}
