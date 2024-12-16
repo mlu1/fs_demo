@@ -8,7 +8,7 @@ SingleComment.propTypes = {
   };
 
 
-const Login = ({ setIsLogged, setUsername }) => {
+const Login = ({setIsLogged,setUsername}) => {
   const [loginUsername, setLoginUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
