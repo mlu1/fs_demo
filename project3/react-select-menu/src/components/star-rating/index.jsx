@@ -1,6 +1,13 @@
 import './star_style.css'
 import {FaStar} from 'react-icons/fa'
 import { useState } from 'react';
+import PropTypes from prop-PropTypes;
+
+StarRating.propTypes = {
+    noOfStars:PropTypes.number.isRequired
+}
+
+
 
 export default function  StarRating({noOfStars =5}){
 
@@ -24,10 +31,10 @@ export default function  StarRating({noOfStars =5}){
             <h2>Star Rating APP</h2>
             <div className = "star-rating">
             {
-                [...Array(noOfStars)].map((_,index)=>{
+                [...Array(noOfStars)].map((j,index)=>{
                     index +=1
                     return (<FaStar
-                        key={index}
+                        key={j}
                         className={index <= (hover || rating) ? 'active':'inactive'}
                         onClick = {()=> handleClick(index)}
                         onMouseMove = {() =>handleMouseEnter(index)}

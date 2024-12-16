@@ -15,7 +15,7 @@ function TicTacToe() {
           {board.map((b,index)=>{
             return <button 
                     className="cell"
-                    key = {index} 
+                    key = {b} 
                     onClick={()=>handleClick(index)}
                     disabled ={b !==null} >
                 {b}

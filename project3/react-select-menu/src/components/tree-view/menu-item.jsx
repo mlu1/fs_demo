@@ -1,7 +1,12 @@
 import MenuList from "./menu-list"
 import { useState } from "react"
 import {FaMinus,FaPlus} from "react-icons/fa"
+import PropTypes from prop-PropTypes;
  
+MenuItem.PropTypes = {
+    item:PropTypes.object.isRequired 
+}
+
 export default function MenuItem({item}){
     
     const [displayCurrentChildren,setDisplayCurrentChildren] =useState({})

@@ -5,7 +5,7 @@ ImageList.propTypes = {
     images:PropTypes.string
 }
 
-const ImageList = (images)=>{
+const ImageList = ({images})=>{
     const images = images.map((image)=>{
         return(
             <img key={image.id} src = {image.webformatURL} alt="image" />

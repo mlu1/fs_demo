@@ -58,7 +58,7 @@ const SearchUser = () => {
             setUsername(e.target.value);
             setErrorMsg(null);
           }}
-          value={username ? username : ""}
+          value={username}
         />
         <button type="submit" className="login-submit-btn">
           {loading}
