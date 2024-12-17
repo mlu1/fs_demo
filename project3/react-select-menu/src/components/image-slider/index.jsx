@@ -73,7 +73,7 @@ export default function ImageSlider(urls,limit=5,page=1){
                         images && images.length ? 
                         images.map((_,index)=>
                             <button
-                                key = {index}
+                                key = {_}
                                 className={
                                     currentSlide === index ?
                                     "current-indicator":

@@ -7,7 +7,7 @@ type QuestionProps = {
   }
   
 const Question =({key,question,answer}:QuestionProps)=>{
-    const [hidden,settoggleHidden] = useState<boolean>(true)
+    const [hidden,sethidden] = useState<boolean>(true)
     return(
         <article className="question">
             <header>{question}</header>
@@ -15,7 +15,7 @@ const Question =({key,question,answer}:QuestionProps)=>{
                 <span className={`${hidden?'blurred':'visible'}`}></span>
             </p>
             <footer>
-                    <button onClick={()=>settoggleHidden(!hidden)}></button>
+                    <button onClick={()=>sethidden(!hidden)}></button>
             </footer>
         </article>
     )
