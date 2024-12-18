@@ -2,8 +2,7 @@ import { useState } from 'react'
 const initalBoard = ()=> Array(9).fill(null)
 const useTicTacToe = ()=>{
     const [board,setBoard] =  useState(initalBoard())
-    const [isXNext,setisXNext] = useState(true)
-
+    const [isXNext, setIsXNext] = useState(true);
     const WINNING_PATTERNS = [
         [0,1,2],
         [3,4,5],
@@ -35,7 +34,7 @@ const useTicTacToe = ()=>{
         const newBoard = [...board];
         newBoard[index] = isXNext ? "X" :"O";
         setBoard(newBoard);
-        setisXNext(!isXNext);
+        setIsXNext(!isXNext);
     } 
     
     //display winner
@@ -49,7 +48,7 @@ const useTicTacToe = ()=>{
 
     const resetGame=()=>{
         setBoard(initialBoard());
-        setisXNext(true);
+        setIsXNext(true);
     }
 
     return {board,handleClick,calculateWinner,getStatusMessage,resetGame}

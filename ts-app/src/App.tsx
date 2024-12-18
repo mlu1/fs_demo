@@ -4,7 +4,8 @@ import Product from './Product';
 
 function App() {
   const[counter,setCounter] = useState<number>(0);
-  const [paragraphText,setparagraphText] = useState<string>('')
+  const [paragraphText, setParagraphText] = useState<string>('');
+
   const [selectText,setSelectText] = useState<string>('')
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -13,7 +14,7 @@ function App() {
   }
 
   const inputChangeHandler = (e:React.ChangeEvent<HTMLInputElement>):void=>{
-    setparagraphText(e.target.value)
+    setParagraphText(e.target.value)
   }
 
   const handleSelectChange = (e:React.ChangeEvent<HTMLSelectElement>):void=>{
