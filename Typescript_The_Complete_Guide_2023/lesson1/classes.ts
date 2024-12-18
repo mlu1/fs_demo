@@ -71,7 +71,7 @@ console.log(BankAccount.getCount())
 
 /**
  * Inheritance 
- *  -Inherit from BankAccount
+ * -Inherit from BankAccount
  */
 
 class StudentBankAccount extends BankAccount{
@@ -86,7 +86,7 @@ class StudentBankAccount extends BankAccount{
         this.collegeName = collegeName 
      }
 
-    studentLoan(){
+    public studentLoan(){
         console.log('student loan called!')
     }
 }

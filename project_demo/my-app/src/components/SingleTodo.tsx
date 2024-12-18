@@ -65,10 +65,10 @@ const SingleTodo = ({todo,todos,setTodos}:Props) => {
                 >
                 <AiFillEdit/>
             </span>
-            <span className='icon' onClick={() => handleDelete(todo.id)}>
+            <span className='icon' onClick={() => handleDelete(todo.id)}   onKeyDown={handleClick(todo.id)}>
                 <AiFillDelete/>
             </span>
-            <span className='icon' onClick={() => handleDone(todo.id)}>
+            <span className='icon' onClick={() => handleDone(todo.id)} onKeyDown={handleClick(todo.id)}>
                 <MdDone/>  
             </span>
         </div>

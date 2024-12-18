@@ -1,4 +1,11 @@
 import { useState } from "react";
+import PropTypes from 'prop-types'
+
+Tabs.propTypes = {
+    tabsContent:PropTypes.object.isRequired,
+    onChange:PropTypes.func
+}
+
 
 export default function Tabs({ tabsContent, onChange }) {
     const [currentTabIndex,setCurrentTabIndex] = useState(0);
