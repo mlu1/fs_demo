@@ -10,18 +10,17 @@ class Pizza extends React.Component{
             }   
     }
 
-    takeOrder(){
-        this.setState({
-            count:this.state.count +1
-        })
+    takeOrder() {
+        this.setState(prevState => ({value: prevState.value + 1}));
     }
 
-    cancelOrder(){
-        this.setState({
-            count:this.state.count > 0 ? this.state.count-1:this.state.count =0 
-        })
+    cancelOrder() {
+        this.setState((prevState) => ({
+            count: prevState.count > 0 ? prevState.count - 1 : 0
+        }));
     }
-
+    
+    
     render(){
         return (
             <div className='pizza-container'> 
