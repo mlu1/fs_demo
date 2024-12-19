@@ -22,7 +22,6 @@ export default function ImageSlider(urls,limit=5,page=1){
         }
     }
 
-
      /*
         Scenario
         1. User is at the first image and clicks left button -> go to last image.

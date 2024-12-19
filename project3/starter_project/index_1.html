@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Practice Pages</title>
-        <link rel ="icon" href="images/practice.png"/>
-    </head>   
-    <body>
-        <h1 style="color:blue;background-color:red">
-             This is red heading
-        </h1>
-        <a href="https://google.com" target="_blank">Go to site</a><br>
-        <a href="mailto:sample@sample.com">Send me an email</a>
-        <table>
-                <tr>
-                    <th>Name</th>   
-                    <th>Age</th>
-                    <th>Class</th>
-               </tr>
-               <tr>
-                    <td>Toni<td>
-                    <td>35</td>
-                    <td>Year 12<td> 
-               </tr>
-               <tr>
-                    <td>John<td>
-                    <td>36</td>
-                    <td>Year 15<td> 
-                </tr>  
-        </table>
-        <dl>
-            <dt>Item 1</dt>
-                <dd>*The first Item</dd>
-            <dt>Item 2</dt>
-                <dd>*The Second Item</dd>
-            <dt>Item 3</dt>
-                <dd>*The Third Item</dd>
-        <dl>
-         <div style ="color:green;background-color:orange">       
-            <h1>First Div</h1>
-            <b>Hi<b> 
-        </div>
-        <div style ="color:red;background-color:purple ">       
-            <h1>Second Div</h1>
-            <span>Hi</span>
-            <span>Hi2inline</span> 
-        </div>
-        <iframe src ="https://google.com" height="50" width="50"
-        style ="border:2px;"></iframe> 
-        <p>The euro sign &#169;</p>
-        <p>The euro sign &#9830;</p>
-        <p>The euro sign &#482;</p>
+<head>
+    <title>Practice Pages</title>
+    <link rel="icon" href="images/practice.png" alt="Practice Icon" />
+    <meta name="description" content="A practice page to demonstrate various HTML elements, including tables, links, forms, and iframes." />
+</head>
+<body>
+    <!-- Heading with description -->
+    <h1 style="color: blue; background-color: red;">
+        This is a red heading with blue text
+    </h1>
+    <!-- Links section -->
+    <p>Below are examples of different types of links:</p>
+    <a href="https://google.com" target="_blank" title="Opens Google in a new tab">Go to Google</a><br>
+    <a href="mailto:sample@sample.com" title="Send an email to sample@sample.com">Send me an email</a>
+
+    <!-- Table with description -->
+    <p>The table below displays example data for names, ages, and classes:</p>
+    <table border="1">
+        <caption>A simple table showing Name, Age, and Class</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Toni</td>
+                <td>35</td>
+                <td>Year 12</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>36</td>
+                <td>Year 15</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Definition List -->
+    <p>The list below defines several items with descriptions:</p>
+    <dl>
+        <dt>Item 1</dt>
+        <dd>*The first item</dd>
+        <dt>Item 2</dt>
+        <dd>*The second item</dd>
+        <dt>Item 3</dt>
+        <dd>*The third item</dd>
+    </dl>
+
+    <!-- Div section with headings -->
+    <p>The following sections demonstrate styled div elements:</p>
+    <div style="color: green; background-color: orange;">       
+        <h2>First Div</h2>
+        <p><b>Hi</b> - This is the first styled div.</p>
+    </div>
+    <div style="color: red; background-color: purple;">       
+        <h2>Second Div</h2>
+        <p>This div contains inline text:</p>
+        <span>Hi</span>
+        <span>Hi 2 inline</span>
+    </div>
+
+    <!-- Iframe -->
+    <p>Below is an iframe displaying Google in a small window:</p>
+    <iframe src="https://google.com" height="50" width="50" style="border: 2px solid black;" title="Google iframe"></iframe> 
+
+    <!-- Character Entities -->
+    <p>Examples of character entities:</p>
+    <p>The euro sign: &euro;</p>
+    <p>A diamond symbol: &#9830;</p>
+    <p>Custom character: &#482;</p>
+    
+    <!-- Form -->
+    <p>The form below collects user information such as name and school:</p>
+    <form action="form.html" method="POST">
+        <label for="username">Name:</label><br>
+        <input type="text" name="username" id="username" placeholder="Enter your name" /><br>
         
-        <form action="form.html" method="POST">
-            <label for="username">Name</label>
-            <br>
-            <input type="text" name = "username" id="username">  
-            <br>
-            <label for="school">School</label>
-            <br>
-            <input type="text" name = "school" id="school">  
-            <br>
-            <label for="checkbox">Mlu</label>
-            <br>
-            <input type = "checkbox" name ="checkbox" id="checkbox" value ="Mluleki">
-            <input type = "submit" value ="Send">
-        </form>
+        <label for="school">School:</label><br>
+        <input type="text" name="school" id="school" placeholder="Enter your school" /><br>
         
-        
-    </body>   
+        <label for="checkbox">Mlu:</label><br>
+        <input type="checkbox" name="checkbox" id="checkbox" value="Mluleki" />
+        <br>
+        <input type="submit" value="Send" />
+    </form>
+</body>
 </html>
