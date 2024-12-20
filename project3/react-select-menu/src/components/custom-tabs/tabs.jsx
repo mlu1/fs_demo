@@ -22,7 +22,9 @@ export default function Tabs({ tabsContent, onChange }) {
                         Then onclick we just get the id clicked and then the 
                     */
                     tabsContent.map((tabItem,index) => (
-                        <div className={`tab-item ${currentTabIndex == index ? "active" :""}` } onClick={()=>handleOnClick(index)} 
+                        <div className={`tab-item ${currentTabIndex == index ? "active" :""}` }
+                            onClick={()=>handleOnClick(index)} 
+                            onKeyDown={handleClick(index)}
                             key={tabItem.label}>
                             <span className="label">{tabItem.label}</span>
                     </div>
