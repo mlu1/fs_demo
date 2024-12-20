@@ -1,5 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
+
+UserCard.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  
 const UserCard = ({children})=>{
     return(
         <div className='ui card'>

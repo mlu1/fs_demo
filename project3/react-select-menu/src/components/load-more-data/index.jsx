@@ -4,7 +4,7 @@ import './more-data-styles.css'
 export default function LoadMoreData(){
 
     const [loading,setLoading] = useState(false)
-    const [products,setproducts] = useState([])
+    const [products,setProducts] = useState([])
     const [count,setCount] = useState(0)
     const [disableButton,setDisableButton] = useState(false)
 
@@ -18,7 +18,7 @@ export default function LoadMoreData(){
             const result   = await response.json();
 
             if(result){
-                setproducts((prevData)=>[...prevData,...result.products])
+                setProducts((prevData)=>[...prevData,...result.products])
                 setLoading(false)
             }
             console.log(result)

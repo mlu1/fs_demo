@@ -6,7 +6,6 @@ Tabs.propTypes = {
     onChange:PropTypes.func
 }
 
-
 export default function Tabs({ tabsContent, onChange }) {
     const [currentTabIndex,setCurrentTabIndex] = useState(0);
     
@@ -31,7 +30,7 @@ export default function Tabs({ tabsContent, onChange }) {
             </div>
             <div className="content" style={{color:'red'}}>
                     {
-                        tabsContent[currentTabIndex] && tabsContent[currentTabIndex].content
+                        tabsContent[currentTabIndex].content
                     }
             </div>
         </div>
