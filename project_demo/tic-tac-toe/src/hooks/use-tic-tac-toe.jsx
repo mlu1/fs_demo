@@ -14,19 +14,19 @@ const useTicTacToe = ()=>{
         [2,4,6],
     ]
 
-    const  calculateWinner = (currentBoard)=>{
-        for(let i =0; i<WINNING_PATTERNS.length;i++){
-            const [a,b,c] = WINNING_PATTERNS[i]
-            if(currentBoard[a] &&
-               currentBoard[a] ===currentBoard[b] && 
-               currentBoard[a] === currentBoard[c])
-               {
-                return currentBoard[a]
-               } 
+    const calculateWinner = (currentBoard) => {
+        for (const [a, b, c] of WINNING_PATTERNS) {
+            if (
+                currentBoard[a] &&
+                currentBoard[a] === currentBoard[b] &&
+                currentBoard[a] === currentBoard[c]
+            ) {
+                return currentBoard[a];
+            }
         }
-        return null  
+        return null;
     };
-
+    
     const handleClick = (index)=>{
         //check if there is a winner first
         const winner = calculateWinner(board)

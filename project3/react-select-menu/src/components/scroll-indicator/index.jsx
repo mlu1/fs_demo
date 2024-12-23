@@ -8,7 +8,6 @@ ScrollIndicator.propTypes = {
 
 export default function ScrollIndicator({url}){
     const [data,setData] = useState([]);
-    const [loading,setLoading] = useState(false)
     const [errorMessage,setErrorMessage] =useState('')
     const [scrollPercentage,setScrollPercentage] = useState(0)
     

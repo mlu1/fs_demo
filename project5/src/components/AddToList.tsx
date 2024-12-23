@@ -12,7 +12,8 @@ const AddToList: React.FC<IProps> = ({setPeople, people}) => {
         name: "",
         age: "",
         note: "",
-        img: ""
+        img: "",
+        id:""
     }) 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -31,7 +32,8 @@ const AddToList: React.FC<IProps> = ({setPeople, people}) => {
                 name: input.name,
                 age: parseInt(input.age),
                 url: input.img,
-                note: input.note
+                note: input.note,
+                id:parseInt(input.id)
             }
         ]);
 
@@ -39,7 +41,8 @@ const AddToList: React.FC<IProps> = ({setPeople, people}) => {
             name: "",
             age: "",
             img: "",
-            note: ""
+            note: "",
+            id:""
         })
     }
 

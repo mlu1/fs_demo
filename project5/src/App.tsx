@@ -8,7 +8,8 @@ export interface IState {
     name:string,
     age:number,
     url:string,
-    note?:string
+    note?:string,
+    id:number,
   }[]
 }
 
@@ -20,7 +21,8 @@ function App() {
     name:"Lebron James",
     url:"https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png",
     age:36,
-    note:"Allergic to staying in one team"
+    note:"Allergic to staying in one team",
+    id:1
   }])
 
   return (

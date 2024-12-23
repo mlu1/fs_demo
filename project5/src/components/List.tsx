@@ -1,26 +1,24 @@
 import React from "react"
-import { IState as IProps} from "../App" 
+import { IState as IProps } from "../App"
 
-
-const List:React.FC<IProps> =({people})=>{
-    const renderList=():JSX.Element[]=>{
+const List: React.FC<IProps> = ({ people }) => {
+    const renderList = (): JSX.Element[] => {
         return (
-            people.map((person) =>{ 
-              return (<li className="List">
-                    <div className="List-header">
-                        <img className="List-img" src={person.url} alt=""/>
+            people.map((person) => {
+                return (<li className="List">
+                    <div className="List-header" key = {person.id}>
+                        <img className="List-img" src={person.url} alt="" />
                         <h2>{person.name}</h2>
                     </div>
                     <p>{person.age} years old</p>
                     <p className="List-note">{person.note}</p>
-                    </li>
-              )
-  
-        }))
+                </li>
+                )
+            }))
     }
-    return(
-            <ul>{renderList()}</ul>
-        )
+    return (
+        <ul>{renderList()}</ul>
+    )
 }
 
 export default List
