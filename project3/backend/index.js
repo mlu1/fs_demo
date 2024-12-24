@@ -1,10 +1,9 @@
 import app from "./server.js"
 import mongodb from "mongodb"
-import ReviewDAO from "./dao/reviewsDAO.js"
 
 const MongoClient = mongodb.MongoClient
-const mongo_username = "mlumtande"
-const mongo_password = "N0yvr33YYq7hcnkZ"
+const mongo_username = ""
+const mongo_password = ""
 
 const uri = `mongodb+srv://${mongo_username}:${mongo_password}@reviews.z4suer6.mongodb.net/?retryWrites=true&w=majority&appName=reviews`
 const port = 8000

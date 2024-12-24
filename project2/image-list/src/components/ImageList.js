@@ -1,19 +1,25 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
+
+const ImageList = ({ images }) => {
+  if (!images || !Array.isArray(images)) {
+    return <div>No images to display.</div>;
+  }
+
+  const renderedImages = images.map((image) => {
+    return <img key={image.id} src={image.webformatURL} alt="image" />;
+  });
+
+  return <div>{renderedImages}</div>;
+};
 
 ImageList.propTypes = {
-    images:PropTypes.string
-}
-
-const ImageList = ({images})=>{
-    const images = images.map((image)=>{
-        return(
-            <img key={image.id} src = {image.webformatURL} alt="image" />
-        )
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      webformatURL: PropTypes.string.isRequired,
     })
-    return(
-        <div>{images}</div>
-    )
-}
+  ).isRequired,
+};
 
 export default ImageList;
