@@ -1,33 +1,30 @@
 import React from "react";
-import PropTypes from prop-PropTypes;
+import PropTypes from "prop-types";
+
+const SingleComment = ({ picture, name,date,text }) => {
+  return (
+    <div className="comment">
+      <a href="/" className="avatar">
+        <img src={picture} alt="profile" />
+      </a>
+      <div className="content">
+        <a href="/" className="author">
+          {name}
+        </a>
+        <div className="metadata">
+          <span className="date">{date}</span>
+        </div>
+        <div className="text">{text}</div>
+      </div>
+    </div>
+  );
+};
 
 SingleComment.propTypes = {
-    picture: PropTypes.string.isRequired,
-    date:PropTypes.Date.isRequired,
-    text:PropTypes.string.isRequired
-  };
+  picture: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  date:PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
-const SingleComment =({picture,name,date})=>{
-    return(
-            <div className='comment'>
-                <a href="/" className='avatar'>
-                    <img src = {picture} alt ="profile"/>
-                </a>
-                <div className='content'>
-                    <a href="/" className='author'>
-                            {name}
-                    </a>
-                    <div className='metadata'>
-                        <span className='date'>
-                            {date}
-                        </span>
-                    </div>
-                    <div className='text'>
-                        {text}
-                    </div>
-                </div>
-            </div>
-    )
-}
-
-export default SingleComment; 
+export default SingleComment;

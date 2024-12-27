@@ -29,8 +29,7 @@ const App =()=>{
                     text = {'Thanks'}
                     picture = {profile3}
                     />   
-                 </UserCard>
-                         
+                 </UserCard> 
             </div>      
     )
 }
