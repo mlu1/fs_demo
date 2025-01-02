@@ -4,12 +4,6 @@ import southernPic from  './images/southern.jpg'
 import './hemisphere.css'
 import PropTypes from 'prop-types';
 
-
-HemisphereDisplay.propTypes = {
-    latitude: PropTypes.boolean.isRequired,
-  };
-
-
 const hemisphereConfig = {
     Northern:{
         text:'it is Nothern hemisphere',
@@ -20,7 +14,6 @@ const hemisphereConfig = {
         text: 'it is southern hemisphere',
         picture:southernPic
     }
-
 }
 
 const HemisphereDisplay = ({latitude})=>{
@@ -40,6 +33,10 @@ const HemisphereDisplay = ({latitude})=>{
             </div>
         </div>
     )
-}
+};
+HemisphereDisplay.propTypes = {
+    latitude: PropTypes.number.isRequired,
+  };
+
 
 export default HemisphereDisplay
