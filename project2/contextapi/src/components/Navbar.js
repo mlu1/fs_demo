@@ -7,8 +7,9 @@ class Navbar extends React.Component {
     return (
       <ThemeContext.Consumer>
         {(context) => {
-            const { isDarkTheme, darkTheme, lightTheme } = context;
+            const { isDarkTheme, darkTheme, lightTheme } = this.context;
             const theme = isDarkTheme ? darkTheme : lightTheme;
+            console.log(theme.background)
           return (
             <nav
               style={{
@@ -18,7 +19,7 @@ class Navbar extends React.Component {
               }}
             >
               <h2 style={{ textAlign: "center" }}>CubePilot Academy</h2>
-              <div className="ui three b">
+              <div className="ui three buttons">
                 <button className="ui button">Overview</button>
                 <button className="ui button">Contact</button>
                 <button className="ui button">Support</button>
