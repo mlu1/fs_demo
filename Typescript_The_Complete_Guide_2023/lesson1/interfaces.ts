@@ -1,10 +1,10 @@
 interface ForexAccount{
     accountNumbers:number;
-    accountName:string;
+    accountNames:string;
     accountBalances:number;
 }
 
-class MvasiBankAccount{
+class MvasiBankAccount implements ForexAccount{
     accountNumbers:number;
     accountNames:string;
     accountBalances:number;
@@ -17,3 +17,5 @@ class MvasiBankAccount{
         this.accountBalances = accountBalances;
     }
 }
+
+let studentAcc1 = new MvasiBankAccount(1,"",1000);
